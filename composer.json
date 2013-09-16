@@ -1,0 +1,28 @@
+{
+	"name" : "bread/radius",
+	"description" : "Bread RADIUS library",
+	"type" : "library",
+	"authors" : [{
+			"name" : "Giovanni Lovato",
+			"email" : "giovanni.lovato@aldu.net"
+		}
+	],
+	"keywords" : [
+		"bread",
+		"radius"
+	],
+	"license" : [
+		"CC-BY-3.0"
+	],
+	"require" : {
+		"bread/types" : "~0.1",
+		"php" : ">=5.4",
+		"bread/configuration" : "~1.1",
+		"bread/ldap" : "~0.1"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Bread\\RADIUS" : "src"
+		}
+	}
+}
