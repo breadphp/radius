@@ -12,7 +12,7 @@ trait Profile
     use CommonName;
      */
 
-    protected $dialupAccess;
+    protected $dialupAccess = true;
 
     protected $radiusArapFeatures;
 
