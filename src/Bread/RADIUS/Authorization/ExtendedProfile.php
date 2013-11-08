@@ -12,6 +12,8 @@ trait ExtendedProfile
     protected $radiusExpireAfter;
     
     protected $radiusLoginWithin;
+    
+    protected $radiusLoginWithinInterval;
 }
 
 Configuration::defaults('Bread\RADIUS\Authorization\ExtendedProfile', array(
@@ -20,6 +22,9 @@ Configuration::defaults('Bread\RADIUS\Authorization\ExtendedProfile', array(
             'type' => 'integer'
         ),
         'radiusLoginWithin' => array(
+            'type' => 'integer'
+        ),
+        'radiusLoginWithinInterval' => array(
             'type' => 'integer'
         )
     )
