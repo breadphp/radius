@@ -12,9 +12,7 @@
 		"radius"
 	],
 	"homepage" : "https://github.com/breadphp/radius",
-	"license" : [
-		"CC-BY-3.0"
-	],
+	"license" : "CC-BY-3.0",
 	"require" : {
 		"bread/types" : "~0.1",
 		"php" : ">=5.4",
@@ -22,8 +20,8 @@
 		"bread/ldap" : "~0.1"
 	},
 	"autoload" : {
-		"psr-0" : {
-			"Bread\\RADIUS" : "src"
+		"psr-4" : {
+			"Bread\\RADIUS\\" : "src"
 		}
 	}
 }
