@@ -68,10 +68,10 @@ Configuration::defaults('Bread\RADIUS\Accounting\Session', array(
             'type' => 'integer'
         ),
         'acctstarttime' => array(
-            'type' => 'DateTime'
+            'type' => 'Bread\Types\DateTime'
         ),
         'acctstoptime' => array(
-            'type' => 'DateTime'
+            'type' => 'Bread\Types\DateTime'
         ),
         'acctsessiontime' => array(
             'type' => 'integer'

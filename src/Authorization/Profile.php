@@ -12,7 +12,7 @@ trait Profile
     use CommonName;
      */
 
-    protected $dialupAccess = true;
+    protected $dialupAccess = 1;
 
     protected $radiusArapFeatures;
 
@@ -140,10 +140,10 @@ trait Profile
 Configuration::defaults('Bread\RADIUS\Authorization\Profile', array(
     'properties' => array(
         'dialupAccess' => array(
-            'type' => 'boolean'
+            'type' => 'integer'
         ),
         'radiusExpiration' => array(
-            'type' => 'DateTime'
+            'type' => 'Bread\Types\DateTime'
         ),
         'radiusIdleTimeout' => array(
             'type' => 'integer'
