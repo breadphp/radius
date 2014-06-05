@@ -30,7 +30,7 @@ trait Profile
 
     protected $radiusCallingStationId;
 
-    protected $radiusCheckItem;
+    protected $radiusCheckItem = array();
 
     protected $radiusClass;
 
@@ -144,6 +144,9 @@ Configuration::defaults('Bread\RADIUS\Authorization\Profile', array(
         ),
         'radiusExpiration' => array(
             'type' => 'Bread\Types\DateTime'
+        ),
+        'radiusCheckItem' => array(
+            'multiple' => true
         ),
         'radiusIdleTimeout' => array(
             'type' => 'integer'
